@@ -43,5 +43,12 @@ class MainTest < Minitest::Test
 
       assert_equal(['one', 'two', 'three'], result)
     end
+
+    def test_returns_empty_list_if_empty_list_is_supplied
+      words = []
+      result = Main.question_4(words)
+
+      assert_equal([], result)
+    end
   end
 end

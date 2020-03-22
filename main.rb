@@ -58,3 +58,4 @@ end
 # Main.question_1
 # p Main.question_2(5) # => 3
 # p Main.question_3 # => [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+# p Main.question_4(['one', 'one', 'two', 'three', 'three', 'two']) # => ['one', 'two', 'three']

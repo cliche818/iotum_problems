@@ -14,7 +14,18 @@ class Main
       end
     end
   end
+
+  def self.question_2(max_number)
+    count = 0
+
+    (0..max_number).each do |number|
+      count += 1 if number % 2 == 0
+    end
+
+    count
+  end
 end
 
 
-Main.question_1
+# Main.question_1
+# p Main.question_2(5) # => 3

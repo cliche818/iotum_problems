@@ -38,8 +38,19 @@ class Main
     possible_values.uniq
   end
 
-  def self.question_4
+  def self.question_4(words)
+    # won't use words.uniq but that would be the quickest solution to implement
+    uniq_words = []
+    lookup = {}
 
+    words.each do |word|
+      if lookup[word].nil?
+        uniq_words << word
+        lookup[word] = true
+      end
+    end
+
+    uniq_words
   end
 end
 

@@ -24,8 +24,26 @@ class Main
 
     count
   end
+
+  def self.question_3
+    possible_values = []
+    (1..6).each do |i|
+      (1..6).each do |j|
+        (1..6).each do |k|
+          possible_values << i + j + k
+        end
+      end
+    end
+
+    possible_values.uniq
+  end
+
+  def self.question_4
+
+  end
 end
 
 
 # Main.question_1
 # p Main.question_2(5) # => 3
+# p Main.question_3 # => [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
